@@ -1,5 +1,5 @@
 //Código Hexadecimal verde: #8EC641
-//Código Hexadecimal gris footer: #3B3B3B
+//Código Hexadecimal gris footer: #3B3B3B, color piel #FFFFE0
 body{
   font-family: "Lato", sans-serif;
   margin:0;
@@ -157,11 +157,37 @@ body{
 
 }
 
-.imgroja{
+.imgefectos{
+  position: relative;
+}
+
+.imgefectos{
+  
   @include imgroja;
   @mixin imgrojahober
   .texty{
     color: white;
     text-align: center;
   }
+}
+
+.imgrojita{
+  margin-left: 10px;
+}
+
+.cajitas{
+  background-color: $cajitas;
+  color: white;
+}
+
+.cajaimg1{
+    background-color:#FFDEAD;
+}
+
+.cajaimg2{
+  background-color: #8EC641; 
+}
+
+.cajaimg3{
+  background-color: #DB7093;
 }
