@@ -7,13 +7,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!--adaptable a todos los tamaños de compu-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="assets/sass/main.scss">
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <!--no se cual de todos es-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
   <link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
   <link rel="stylesheet" type="text/css" href="assets/sass/_style.scss">
 </head>
 
 <body> 
+
+<!-- navbar, hamburguesa-->
+
 <section class="menu-img">
   <div class="container">
   	<div class="row">
@@ -34,18 +40,24 @@
     </div>
   		</div>
   	</div>
-  </div>
-<div class="row">
-	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <img class="logo" src="dist/docs/img/logo.png">
-      <div id="main">
-         <img class="coki" src="dist/docs/img/fondo-bienvenida.jpg">
-         <img src="dist/docs/img/bienvenida.png">
-      </div>
-	</div>
-</div>
-	
+  </div>	
 </section>
+
+<!---seccion bajo el navbar-->
+
+<section class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <img class="logo" src="dist/docs/img/logo.png">
+          <div id="main">
+            <img class="coki" src="dist/docs/img/fondo-bienvenida.jpg">
+            <img src="dist/docs/img/bienvenida.png">
+          </div>
+        </div>
+    </div>
+</section>
+
+<!--aqui iria la idea del video :(-->
 
 <section class="video">
 	<div class="container">
@@ -56,6 +68,8 @@
   	  </div>
     </div>
 </section>
+
+<!--nuestra pasion-->
 
 <section class="npasion">
   <div class="container">
@@ -70,42 +84,39 @@
   	</div>
   </div>
 </section>
+
+<!--tipos de té-->
+
 <section class="tecitos">
   <div class="container">
     <div class="row">
           <div class="col-lg-2 col-md-2 col-sm-4 text-center">
-            <h2>Negro</h2>
+            <h2 class="miaus">Negro</h2>
             <p>Disminuye la absorción de colesterol y reduce la posibilidad de sufrir enfermedades cardiovasculares.
           </div>
           <div class="col-lg-2 col-md-2 col-sm-4 text-center">
-            <h2>Verde</h2>
+            <h2 class="miaus">Verde</h2>
             <p>Reduce la formación de coágulos anormales favoreciendo nuesto corazón, además disminuye los niveles de azúcar.</p> 
           </div>
           <div class="col-lg-2 col-md-2 col-sm-4 text-center">
-            <h2>Rojo</h2>
+            <h2 class="miaus">Rojo</h2>
             <p>Para la depresión, la melancolía y el mar humor. Adicionalmente facilita la digestión, ayuda a desintoxicar el organismo.</p>      
           </div>
           <div class="col-lg-2 col-md-2 col-sm-4 text-center">
-            <h2>Blanco</h2>
+            <h2 class="miaus">Blanco</h2>
             <p>disminuye la actividad de las enzimas que disminuyen la producción de elastina y colágeno en nuestra piel</p>
           </div>
           <div class="col-lg-2 col-md-2 col-sm-4 text-center">
-            <h2>Oolong</h2>
+            <h2 class="miaus">Oolong</h2>
             <p>Puede disminuir el nivel de colesterol en sangre y también está recomendado para bajar de peso</p>
           </div>
     </div>      
   </div>
 </section>
 
+<!--section simagenes conefecto hover q no funciona :(-->
+
 <section class="imgefectos">
-
-
-<div class="container">
-  <div class="div-img hidden" >
-    <img class="img" src="http://www.interactius.com/wp-content/uploads/2015/03/foto2.png" title="Foto2" alt="Foto2">
-  </div>
-</div>
-
 
  <div class="container">
     <div class="row">
@@ -140,6 +151,8 @@
    </div> 
   </div>
 </section>
+
+<!--preguntas frecuentes-->
 
 <section class="preguntas">
   <div class="container">
@@ -181,6 +194,8 @@
   </div>
 </section>
 
+<!--los campos-->
+
 <div class="campos">
     <div class="container">
         <div class="row">
@@ -191,7 +206,9 @@
         </div>
     </div>
 </div>
+
 <!--SLIDER-->
+
 <section class="slider">
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
@@ -206,7 +223,7 @@
             </div>
         </div>
 
-  <!-- Left and right controls -->
+    <!-- Left and right controls -->
     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -218,6 +235,8 @@
     </div>
 </section>
 
+<!--presentacion tecito detox -->
+
 <section class="casifinal">
     <div class="container">
         <div class="row">
@@ -227,12 +246,12 @@
                 
                 <h1>Amamos el Té</h1>
                 <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt nisi consequatur nemo ab eligendi sint cum, non culpa ducimus aperiam accusamus in totam ipsam maxime voluptatem, impedit assumenda voluptas. Eum provident, quibusdam commodi et placeat enim voluptatum reprehenderit harum est fugiat pariatur eveniet cum unde eius velit in voluptate quidem nemo.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis deserunt nisi consequatur nemo ab eligendi sint cum, non culpa ducimus aperiam accusamus in totam ipsam maxime voluptatem, impedit assumenda voluptas.</p>
                 <ul>
-                  <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
-                  <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
-                  <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
-                  <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+                  <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, pharetra ultricies indiam Sed arcu. Cras consequat.</li>
+                  <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas eu erat. Aliquam erat volutpat.</li>
+                  <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer  sem tristique cursus.</li>
+                  <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor.</li>
                 </ul>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab error blanditiis, sequi qui quia possimus cumque pariatur totam dolore, iste at debitis sit excepturi distinctio nam esse eveniet quae dolores!</p>
 
@@ -244,6 +263,8 @@
         </div>
     </div>
 </section>
+
+<!--footer-->
 
 <footer class="piepag">
     <div class="container">
