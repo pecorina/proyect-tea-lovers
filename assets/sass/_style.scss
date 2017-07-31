@@ -152,26 +152,68 @@ body{
 
 }
 
-.piepag{
-  width: 100%;
-
-}
-
+/*img con efectyo hover*/
 .imgefectos{
   position: relative;
+  .container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 20px;
+}
+.div-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.div-img.hidden {
+  overflow: hidden;
+}
+.div-img .img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+}
+.div-img:hover .img {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.container{   
+  width: 200px;
+  height: 200px;
+  //border: 1px solid blue;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top:20px;
+}
 }
 
-.imgefectos{
-  
-  @include imgroja;
-  @mixin imgrojahober
-  .texty{
+
+
+.texty{
     color: white;
     text-align: center;
   }
-}
 
-.imgrojita{
+.img{
   margin-left: 10px;
 }
 
@@ -190,4 +232,14 @@ body{
 
 .cajaimg3{
   background-color: #DB7093;
+}
+
+.piepag{
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  background-color: #3B3B3B;
+  color: white;
+
 }
