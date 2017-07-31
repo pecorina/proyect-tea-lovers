@@ -2,8 +2,8 @@
 //Código Hexadecimal gris footer: #3B3B3B, color piel #FFFFE0
 body{
   font-family: "Lato", sans-serif;
-  margin:0;
-  padding:0;
+ 
+
 }
 
 .menu-img{
@@ -224,21 +224,32 @@ body{
   margin-left: 10px;
 }
 
-.cajitas{
-  background-color: $cajitas;
-  color: white;
+#cajitas{
+  background-color: #FFFFE0;
+  color: #3B3B3B;
+  height: 578px;
+  text-align: center;
+  h2, p{
+    margin-top:10px;
+  }
 }
 
 .cajaimg1{
     background-color:#FFDEAD;
+    padding: 80px;
+
 }
 
 .cajaimg2{
   background-color: #8EC641; 
+  padding: 80px;
+
 }
 
 .cajaimg3{
   background-color: #DB7093;
+  padding: 80px;
+
 }
 
 .piepag{
