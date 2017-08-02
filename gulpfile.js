@@ -7,7 +7,7 @@ var webserver = require('gulp-webserver');
 
 //concatena nuestros archivos js convirtiendolos en script.js el q guardara en una carpeta dist.- el q sera linkeado al html
 gulp.task('script', function(){
-    gulp.src(['node_modules/jquery/dist/jquery.js','node_modules/bootstrap-css/dist/js/bootstrap.js',
+    gulp.src(['node_modules/jquery/dist/jquery.js','node_modules/bootstrap/dist/js/bootstrap.js',
         'assets/js/*.js'])
     .pipe(concat('script.js'))
     //carpeta dist
@@ -15,7 +15,7 @@ gulp.task('script', function(){
 });
 //concatenara y minificara nuestro archivo main.scss convirtiendolo en style.min.css el q guardara en carpeta dist, sera elq finalmente linkearemos al html.-
 gulp.task('style',function(){
-    gulp.src(['node_modules/bootstrap-css/dist/css/bootstrap.css', 'assets/sass/main.scss'])
+    gulp.src(['node_modules/bootstrap/dist/css/bootstrap.css', 'assets/sass/main.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(minifyCSS())
     .pipe(concat('style.min.css'))

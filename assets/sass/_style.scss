@@ -114,14 +114,14 @@ body{
 #main { 
     transition: margin-top .4s;
     text-align:center;
-        margin-top: 10px;
-        padding: 0;
-        font-size:30px;
-        width: 100%;
-        height: 600px;
+    margin-top: 10px;
+    padding: 0;
+    font-size:30px;
+    width: 100%;
+    height: 600px;
 }
 .bienvenida{
-    background-image: url(../docs/img/fondo-bienvenida.jpg);
+    background-image: url('../docs/img/fondo-bienvenida.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -129,19 +129,29 @@ body{
     padding: 0;
 }
 .logo {
-        width: 80px;
-        height: 70px;
+        width: 100px;
+        height: 90px;
         margin: 90px;
         margin-top: 80px;
     }
 
 /*video*/
-
-.videito{
+.video{
+    width: 100%;
+    height: auto;
+}
+.video-container {
+  position: relative;
   width: 100%;
-  height: 400px;
-  border-color: white;
-  background-color: #3B3B3B; 
+  height: 0;
+  padding-bottom: 56.25%;
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*nuestra pasion*/
@@ -151,22 +161,24 @@ body{
     background-size: cover;
     width:100%;
     height: 700px;
+    h1 p{
+      color: white;
+      margin-top: 20px;
+    }
 }
 
 /*tesitos*/
 .tecitos{ 
-  
-    height: 500px;
+    
+    height: 200px;
     .miaus{
     color: #F08080;
     }
 }
 
-/*img con efectyo hover*/
+/*img con efecto hover*/
 .imgefectos{
   .container-img {
-    width: 600px;
-    height: 600px;
     position: absolute;
     left: 0;
     right: 0;
@@ -206,22 +218,29 @@ body{
 
 }
 
-
-
-.texty{
-    color: white;
-    text-align: center;
-  }
-
-.div-img{
-  margin-left: 10px;
+/*tamaño imagenes con efectos*/
+.vid1{
+   width: 300px;
 }
+.vid2{
+  width: 262px;
+  height: 257px;
+}
+.vid3{
+  width: 262px;
+  height: 257px;
+}
+.vid4{
+    margin-bottom: 63px;
+}
+
+
 
 /*preguntas frecuentes*/
 .pfrecuentes{
   background-image: url(../docs/img/disfruta.jpg);
   background-repeat: no-repeat;
-  background-size: cover
+  background-size: cover;
 }
 
 #cajitas{
@@ -236,21 +255,46 @@ body{
 
 .cajaimg1{
     background-color:#FFDEAD;
-    padding: 80px;
+    padding: 90px;
 
 }
 
 .cajaimg2{
   background-color: #8EC641; 
-  padding: 80px;
+  padding: 90px;
 
 }
 
 .cajaimg3{
   background-color: #DB7093;
-  padding: 80px;
+  padding: 90px;
 
 }
+.campos{
+  background-image: url(../docs/img/parallax-4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  
+  h1{
+    color: white;
+  }
+}
+
+.slider{
+   height: 700px;
+   width: 100%;
+ }
+
+ .casifinal{
+    margin-bottom:20px;
+    hr{
+      padding: 5px;
+      border-color: #DB7093 
+    }
+ }
+
+
 
 .piepag{
   position: absolute;
@@ -261,3 +305,5 @@ body{
   color: white;
 
 }
+
+
