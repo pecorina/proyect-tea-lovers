@@ -24,7 +24,7 @@
 <section class="menu-img">
   <div class="container">
   	<div class="row">
-  		<div class="col-lg-12">
+  		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
   			<div id="topNav" class="navigation">
         <span id="closebtn" onclick="navToggle()">
             <span class="line1"></span>
@@ -39,23 +39,25 @@
             <li><a class="menuitems" href="#">LOS CAMPOS</a></li>
         </ul>			
     </div>
-  		</div>
+
+  	</div>
   	</div>
   </div>	
 </section>
 
 <!---seccion bajo el navbar-->
-
-<section class="container">
+<section class="bienvenida">
+  <div class="container">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <img class="logo" src="dist/docs/img/logo.png">
           <div id="main">
-            <img class="coki" src="dist/docs/img/fondo-bienvenida.jpg">
+        
             <img src="dist/docs/img/bienvenida.png">
           </div>
         </div>
     </div>
+  </div>
 </section>
 
 <!--aqui iria la idea del video :(-->
@@ -75,13 +77,10 @@
 <section class="npasion">
   <div class="container">
   	<div class="row">
-  		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-  		   <img src="dist/docs/img/fondo-about.jpg" alt="" class="psionimg">
-  		   <div id="parrafo" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+  		   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
   		   	  <h1>Nuestra Pasion</h1>
   		   	  <p>El té es una bebida utilizada habitualmente por la medicina natural de las civilizaciones orientales para aprovechar sus propiedades terapéuticas. Algunas de sus versiones son:</p>
   		   </div>	
-  		</div>
   	</div>
   </div>
 </section>
@@ -121,30 +120,33 @@
 
  <div class="container">
     <div class="row">
-        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12" >
-            <div class="div-img">
-                <img class="img" src="dist/docs/img/min-video-1-2.jpg">
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" >
+            <div class="container-img">
+              <div class="div-img oculto">
+                  <img class="img" src="dist/docs/img/min-video-1-2.jpg">
+              </div>
             </div>
+
         </div>
 
-        <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="div-img">
-                        <img class="imgroja" src="dist/docs/img/min-video-3.jpg">
+                    <div class="div-img oculto">
+                        <img class="img" src="dist/docs/img/min-video-3.jpg">
                     </div>
-                    <h3 class="texty">ricos tesirotis ricos tes del amor</h3>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="div-img">
-                        <img class="imgroja" src="dist/docs/img/min-video-5.jpg">
+                    <div class="div-img oculto">
+                        <img class="img" src="dist/docs/img/min-video-5.jpg">
                     </div>
                 </div>
             </div> 
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="div-img">
-                        <img class="imgroja" src="dist/docs/img/min-video-6.jpg">
+                    <div class="div-img oculto">
+                        <img class="img" src="dist/docs/img/min-video-6.jpg">
                     </div>
                 </div>
             </div>
@@ -158,8 +160,7 @@
 <section class="preguntas">
   <div class="container">
       <div class="row">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-              <img src="dist/docs/img/disfruta.jpg">
+          <div id="pfrecuentes" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
               <h1>PREGUNTAS <br> Sobre el Té</h1>
           </div>
       </div>
@@ -211,19 +212,21 @@
 <!--SLIDER-->
 
 <section class="slider">
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+ <div class="container">
+   <div class="row">
+     <div class="col-lg-12">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
              <div class="item active">
                 <img class="slidem" src="dist/docs/img/slide1.jpg" alt="foto1">
              </div>
-            <div class="item">
-              <img class="slidem" src="dist/docs/img/slide2.jpg" alt="foto2">                          
-            </div>
              <div class="item">
-              <img class="slidem" src="dist/docs/img/slide3.jpg" alt="foto2">                                             
-            </div>
+                <img class="slidem" src="dist/docs/img/slide2.jpg" alt="foto2">                          
+             </div>
+             <div class="item">
+                <img class="slidem" src="dist/docs/img/slide3.jpg" alt="foto2">                              
+             </div>
         </div>
-
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -233,7 +236,11 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
     </a>
-    </div>
+    </div> 
+
+     </div>
+   </div>
+ </div>
 </section>
 
 <!--presentacion tecito detox -->
